@@ -19,6 +19,7 @@ print('iq = {}'.format(iq))
 print('iq.pop_front() = {}'.format(iq.pop_front()))
 print('iq.pop_end() = {}'.format(iq.pop_end()))
 
+print('iq = {}'.format(iq))
 
 print('loop over elements')
 for x in iq:

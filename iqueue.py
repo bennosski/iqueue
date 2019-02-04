@@ -40,7 +40,7 @@ class iqueue:
 
     def __next__(self):
         if self.i<len(self._map):
-            r = self._map[self.i]
+            r = self[self.i]
             self.i += 1
             return r
         else:
