@@ -1,6 +1,6 @@
 from iqueue import iqueue
 
-v = [1,2,'a',4.0]
+v = [1,2,'a',1,4.0]
 
 iq = iqueue(v)
 
@@ -21,5 +21,12 @@ print('loop over elements')
 for x in iq:
     print(x)
 
+print('iq.count(1) = {}'.format(iq.count(1)))
+
+iq.extendleft([3,2,1])
+print('iq = {}'.format(iq))
+
+iq.clear()
+print('iq = {}'.format(iq))
 
 
