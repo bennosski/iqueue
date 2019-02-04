@@ -1,20 +1,28 @@
-
-import iqueue
+from iqueue import iqueue
 
 v = [1,2,3,4]
 
-iq = iqueue.iqueue(v)
+iq = iqueue(v)
 
 iq.append(1)
-iq.append(7)
+iq.append('x')
 
-print(iq)
+print('iq = {}'.format(iq))
+
+print('iq[3] = {}'.format(iq[3]))
+
+iq.prepend('a')
+iq.prepend('c')
+iq.append('b')
+
+print('iq = {}'.format(iq))
+print('iq.pop_front() = {}'.format(iq.pop_front()))
+print('iq.pop_end() = {}'.format(iq.pop_end()))
 
 
-iq.prepend('x')
-iq.prepend('hello')
+print('loop over elements')
+for x in iq:
+    print(x)
 
-print(iq.pop_front())
 
-print(iq)
 
