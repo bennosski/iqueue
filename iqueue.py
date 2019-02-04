@@ -1,33 +1,54 @@
 
 class iqueue:
 
-    def __init__(self, values=[]):
+    def __init__(self, iterable=[]):
         '''
         constructs new iqueue object
 
         - values : may be a list of values with which to initialize the iqueue
         '''
         self._shift = 0
-        self._map = {i:v for i,v in enumerate(values)}
+        self._map = {i:v for i,v in enumerate(iterable)}
 
     def append(self, v):
         self._map[len(self._map)+self._shift] = v
 
-    def prepend(self, v):
+    def appendleft(self, v):
         self._shift -= 1
         self._map[self._shift] = v
 
-    def pop_end(self):
+    #def clear():
+    #    self([])
+
+    #def copy():
+    #    pass
+
+    #def count():
+
+    #def extend(iterable):
+
+    #def extendleft(iterable):
+
+    #def index(x[, start[, stop]])
+
+    #def insert(i,x):
+       # will be inefficient
+    
+    def pop(self):
         v = self._map[len(self._map)-1+self._shift]
         del self._map[len(self._map)-1+self._shift]
         return v
         
-    def pop_front(self):
+    def popleft(self):
         v = self._map[self._shift]
         del self._map[self._shift]
         self._shift += 1
         return v
-        
+
+    # def remove(v):
+
+    # def rotate(n=1):
+    
     def __getitem__(self, i):
         return self._map[i+self._shift]
 
