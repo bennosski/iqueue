@@ -11,7 +11,7 @@ deque objects support the same operations as iqueue objects, but for deque objec
 
 iqueue objects solve both of these problems.
 
-## Example:
+### Example:
 ```ruby
 >>> from iqueue import iqueue
 >>> iq = iqueue([1, 2, 'x', 'y'])             # make a new iqueue with 4 items
