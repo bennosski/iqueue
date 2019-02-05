@@ -25,7 +25,7 @@ x
 y
 
 >>> iq.append(7)                              # add a new entry to the right side
->>> iq.appendleft('x')                        # add a new entry ot the left side
+>>> iq.appendleft('x')                        # add a new entry to the left side
 >>> iq
 iqueue([x, 1, 2, x, y, 7])
 
