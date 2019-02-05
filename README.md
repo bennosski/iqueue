@@ -39,7 +39,7 @@ x
 >>> iq[2]                                     # access the 2nd item - O(1)
 'x'
 
->>> del iq[2]                                 # delete the 2nd item - O(1)
+>>> del iq[2]                                 # delete the 2nd item - O(n)
 >>> print(iq)
 [1, 2, 'y']
 ```
