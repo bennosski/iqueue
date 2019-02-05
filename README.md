@@ -27,14 +27,16 @@ y
 >>> iq.append(7)                              # add a new entry to the right side
 >>> iq.appendleft('x')                        # add a new entry to the left side
 >>> iq
-iqueue([x, 1, 2, x, y, 7])
+iqueue(['x', 1, 2, 'x', 'y', 7])
 
 >>> iq.pop()                                  # return and remove the rightmost item
 7
 >>> iq.popleft()                              # return and remove the leftmost item
 x
 
+>>>list(iq)
+[1, 2, 'x', 'y']
 >>> iq[2]                                     # access the 2nd item
-2
+'x'
 ```
 
