@@ -87,12 +87,11 @@ class iqueue:
             raise ValueError
             
         while i < L-1:
-            #self._map[i+self._shift] = self._map[i+1+self._shift]
             self[i] = self[i+1]
             i += 1
             
         del self._map[L-1+self._shift]
-            
+        
     def rotate(self, n=1):
         '''
         Rotate the iqueue n steps to the right. If n is negative, rotate to the left.
@@ -122,6 +121,28 @@ class iqueue:
         else:
             raise StopIteration
 
+    def __delitem__(self, i):
+        ''' 
+        Delete the element at index i. If index out of range, raises and IndexError.
+        '''
+
+        if i<0 and abs(i)>len(self._map):
+            raise IndexError
+        if i>=0 and abs(i)>=len(self._map):
+            raise IndexError
+
+        if i<0:
+            i = len(self._map)+i
+        
+        if i==0:
+            self.popleft()
+        else:
+            while i < len(self._map)-1:
+                self[i] = self[i+1]
+                i += 1
+            del self._map[len(self._map)-1+self._shift]
+    
+        
     def __bool__(self):
         return len(self._map)>0
 
