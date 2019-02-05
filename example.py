@@ -12,8 +12,8 @@ print('iq[3] = {}'.format(iq[3]))
 iq.appendleft('a')
 
 print('iq = {}'.format(iq))
-print('iq.popleft() = {}'.format(iq.popleft()))
-print('iq.pop() = {}'.format(iq.pop()))
+print('after iq.popleft(), iq = {}'.format(iq.popleft()))
+print('after iq.pop(), iq = {}'.format(iq.pop()))
 
 print('iq = {}'.format(iq))
 
@@ -24,7 +24,13 @@ for x in iq:
 print('iq.count(1) = {}'.format(iq.count(1)))
 
 iq.extendleft([3,2,1])
-print('iq = {}'.format(iq))
+print('after iq.extendleft([3,2,1]), iq = {}'.format(iq))
+
+iq.remove(1)
+print('after iq.remove(1), iq = {}'.format(iq))
+
+iq.rotate(-1)
+print('after rotate, iq = {}'.format(iq))
 
 iq.clear()
 print('iq = {}'.format(iq))
