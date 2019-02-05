@@ -3,7 +3,8 @@
 #
 # - implement insert(i, v) function
 # - add documentation of all methods with examples
-# - optimization : for __delitem__ consider cases when i<N//2 versus i>N//2 separately
+# - optimization :
+#        for __delitem__, remove, rotate, and insert consider the cases when i<N//2 versus i>N//2 separately
 #
 
 class iqueue:
