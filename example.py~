@@ -1,0 +1,12 @@
+
+import iqueue
+
+v = [1,2,3,4]
+
+iq = iqueue(v)
+
+print(iq[0])
+print(iq[1])
+#print(iq[-1])
+
+
