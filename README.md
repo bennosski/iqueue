@@ -34,7 +34,7 @@ iqueue(['x', 1, 2, 'x', 'y', 7])
 >>> iq.popleft()                              # return and remove the leftmost item
 x
 
->>>list(iq)
+>>> list(iq)
 [1, 2, 'x', 'y']
 >>> iq[2]                                     # access the 2nd item
 'x'
