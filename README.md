@@ -1,6 +1,6 @@
 # iqueue
 
-A generalization of stacks and queues which supports fast random memory access. iqueue combines the benefits of queues, stacks, and lists into one data structure.
+A generalization of stacks and queues which supports fast random memory access. iqueue combines the advantages of queues, stacks, and lists into one data structure.
 
 - iqueue objects support memory efficient appends and pops from either side of the iqueue with the same O(1) performance in either direction.
 - iqueue objects support O(1) indexing operations.
