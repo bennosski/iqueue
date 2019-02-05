@@ -38,5 +38,8 @@ x
 [1, 2, 'x', 'y']
 >>> iq[2]                                     # access the 2nd item
 'x'
-```
 
+>>> del iq[2]                                 # delete the 2nd item
+>>> print(iq)
+[1, 2, 'y']
+```
