@@ -131,7 +131,8 @@ class iqueue:
     def __str__(self):
         return [self[i] for i in range(len(self._map))].__str__()
 
-        
+    def __repr__(self):
+        return 'iqueue({})'.format(self.__str__())
 
 
     
