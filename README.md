@@ -1,5 +1,9 @@
 # iqueue
 
+<h1 align="center">
+  <img src="iqueue.png" width="300px" alt="pade">
+</h1>
+
 A generalization of stacks and queues which supports fast random memory access. iqueue combines the advantages of queues, stacks, and lists into one data structure.
 
 - iqueue objects support memory efficient appends and pops from either side of the iqueue with the same O(1) performance in either direction.
