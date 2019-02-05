@@ -24,22 +24,22 @@ iqueue objects solve both of these problems.
 x
 y
 
->>> iq.append(7)                              # add a new entry to the right side
->>> iq.appendleft('x')                        # add a new entry to the left side
+>>> iq.append(7)                              # add a new entry to the right side - O(1)
+>>> iq.appendleft('x')                        # add a new entry to the left side - O(1)
 >>> iq
 iqueue(['x', 1, 2, 'x', 'y', 7])
 
->>> iq.pop()                                  # return and remove the rightmost item
+>>> iq.pop()                                  # return and remove the rightmost item - O(1)
 7
->>> iq.popleft()                              # return and remove the leftmost item
+>>> iq.popleft()                              # return and remove the leftmost item - O(1)
 x
 
 >>> list(iq)
 [1, 2, 'x', 'y']
->>> iq[2]                                     # access the 2nd item
+>>> iq[2]                                     # access the 2nd item - O(1)
 'x'
 
->>> del iq[2]                                 # delete the 2nd item
+>>> del iq[2]                                 # delete the 2nd item - O(1)
 >>> print(iq)
 [1, 2, 'y']
 ```
