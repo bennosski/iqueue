@@ -11,9 +11,9 @@ A generalization of stacks and queues which supports fast random memory access. 
 
 Though list objects support similar operations, they are optimized for fast fixed-length operations and incur O(n) memory movement costs for pop(0) and insert(0, v) operations which change both the size and position of the underlying data representation.
 
-deque objects support the same operations as iqueue objects, but for deque objects indexed access is O(1) at both ends but slows to O(n) in the middle. 
+deque (doubled-ended queue available in the python collections library) objects support the same operations as iqueue objects, but for deque objects indexed access is O(1) at both ends but slows to O(n) in the middle. 
 
-iqueue objects solve both of these problems.
+iqueue objects solve both of these problems while being able to perform the same operations available to lists, stacks, and deques without any loss in asymptotic runtime complexity.
 
 ### Example:
 ```ruby
