@@ -28,15 +28,15 @@ iqueue objects solve both of these problems while being able to perform the same
 x
 y
 
->>> iq.append(7)                              # add a new entry to the right side - O(1)
->>> iq.appendleft('x')                        # add a new entry to the left side - O(1)
+>>> iq.append(-1)                              # add a new entry to the right side - O(1)
+>>> iq.appendleft('w')                        # add a new entry to the left side - O(1)
 >>> iq
-iqueue(['x', 1, 2, 'x', 'y', 7])
+iqueue(['w', 1, 2, 'x', 'y', -1])
 
 >>> iq.pop()                                  # return and remove the rightmost item - O(1)
-7
+-1
 >>> iq.popleft()                              # return and remove the leftmost item - O(1)
-x
+'w'
 
 >>> list(iq)
 [1, 2, 'x', 'y']
