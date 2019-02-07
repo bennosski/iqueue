@@ -101,12 +101,14 @@ class iqueue:
 
         if not found:
             raise ValueError
+
+        self.__delitem__(i)
+        
+        #while i < L-1:
+        #    self[i] = self[i+1]
+        #    i += 1
             
-        while i < L-1:
-            self[i] = self[i+1]
-            i += 1
-            
-        del self._map[L-1+self._shift]
+        #del self._map[L-1+self._shift]
 
     #def insert(self, i, v):
     #    pass

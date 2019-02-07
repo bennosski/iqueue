@@ -11,7 +11,6 @@ print('iq[3] = {}'.format(iq[3]))
 
 iq.appendleft('a')
 
-
 print('iq = {}'.format(iq))
 print('after iq.popleft(), iq = {}'.format(iq.popleft()))
 print('after iq.pop(), iq = {}'.format(iq.pop()))
@@ -33,13 +32,9 @@ print('after iq.remove(1), iq = {}'.format(iq))
 iq.rotate(-1)
 print('after rotate, iq = {}'.format(iq))
 
-
-#del iq[1]
-#del iq[2]
 del iq[6]
 
 print(iq)
-
 
 iq.clear()
 print('iq = {}'.format(iq))
