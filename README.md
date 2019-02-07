@@ -28,7 +28,7 @@ iqueue objects solve both of these problems while being able to perform the same
 x
 y
 
->>> iq.append(-1)                              # add a new entry to the right side - O(1)
+>>> iq.append(-1)                             # add a new entry to the right side - O(1)
 >>> iq.appendleft('w')                        # add a new entry to the left side - O(1)
 >>> iq
 iqueue(['w', 1, 2, 'x', 'y', -1])
